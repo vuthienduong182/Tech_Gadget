@@ -15,11 +15,7 @@
   box-sizing: border-box;
 }
 
-.container#top_nav {
-  max-width: 135rem;
-  margin: 0 auto;
-  padding: 0rem 1rem;
-}
+
 body {
   margin-top: 0px;
   background: #f1f2f7;
@@ -28,6 +24,12 @@ body {
 }
 
 /* navbaar */
+.container#top_nav {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
+
 a#top_nav{
   text-decoration: none;
 }
@@ -56,7 +58,7 @@ li {
   display: block;
 }
 .nav_container#top_nav {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: space-between;
