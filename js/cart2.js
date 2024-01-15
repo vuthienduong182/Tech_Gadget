@@ -5,36 +5,36 @@ let filterarray = [];
 let galleryarray =[
     {
         id : 1,
-        name: "samsung watch",
-        src : "./image/samsungwatch.jpg",
+        name: "Apple Watch Series 3",
+        src : "./image/IphoneXR.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     
     },
     {
         id : 2,
-        name: "ipad",
-        src : "./image/ipad.jpg",
+        name: "Iphone XS Max",
+        src : "./image/Iphone12Promax.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     
     },
     {
         id : 3,
-        name: "iphone 13",
-        src : "./image/iphone13.jpg",
+        name: "Iphone 13",
+        src : "./image/Iphone12.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     
     },
     {
         id : 4,
-        name: "samsung tab",
-        src : "./image/samsungtabjpg.jpg",
+        name: "AirPod Pro",
+        src : "./image/AirPodPro.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     
     },
     {
         id : 5,
-        name: "samsung watch",
-        src : "./image/samsungwatch.jpg",
+        name: "AirPod 2",
+        src : "./image/AirPod2.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
 
@@ -57,6 +57,41 @@ let galleryarray =[
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
 
+    {
+        id : 9,
+        name: "Samsung Galaxy S9+",
+        src : "./image/samsungGalaxys9.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        id : 10,
+        name: "AirPod MAX",
+        src : "./image/AirPodMax.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        id : 11,
+        name: "Xiaomi Mi11 Ultra",
+        src : "./image/XiaomiMi11Ultra.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        id : 12,
+        name: "Samsung Galaxy S21 Ultra 5G",
+        src : "./image/Samsung Galaxy S21 Ultra 5G.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },    
+    
+    {
+        id : 13,
+        name: "MacBook Pro",
+        src : "./image/MacBookPro.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    
     
 ]
 
@@ -71,17 +106,20 @@ function showGallery(currarray){
     {
         document.getElementById("card").innerHTML += 
         `
-        <div class="col-md-4 mt-3">
-            <div class="card p-3 ps-5 pe-5">
-                <h4 class="text-capitalize text-center">${currarray[i].name}<h4/>
-                <img src ="${currarray[i].src}" width = "100% height ="320px">
-                <p class="mt-2">${currarray[i].desc}</p>
-                <button class = "btn btn-primary w-100 mx-auto">More</button>
-            <div/>
-        </div>
+        
+            <div class="col-md-4 mt-4" id = "card">
+                <div class="card p-3 ps-5 pe-5">
+                    <h4 class="text-capitalize text-center">${currarray[i].name}<h4/>
+                    <img src ="${currarray[i].src}" width = "100% height ="350px">
+                    <p class="mt-2">${currarray[i].desc}</p>
+                    <button class = "btn btn-primary w-100 mx-auto">More</button>
+                <div/>
+            </div>
+
         `
     }
 }
+
 
 //live searching
 

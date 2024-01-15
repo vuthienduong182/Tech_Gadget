@@ -1,3 +1,7 @@
+
+
+
+
 const CartItems = document.querySelector(".cart-items");
 
 let cartTotal = 0;
