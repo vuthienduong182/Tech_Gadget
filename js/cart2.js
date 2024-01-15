@@ -37,6 +37,26 @@ let galleryarray =[
         src : "./image/samsungwatch.jpg",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
+
+    {
+        id : 6,
+        name: "Headphone",
+        src : "./image/tainghe.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        id : 7,
+        name: "MacBook",
+        src : "./image/macBook.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        id : 8,
+        name: "Speaker",
+        src : "./image/loaJBL.png",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
     
 ]
 

@@ -1,0 +1,41 @@
+[
+    {
+        "id" : 1,
+        "name": "samsung watch",
+        "price": 500.99,
+        "image" : "./image/samsungwatch.jpg",
+        "desc" :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    
+    },
+    {
+        "id" : 2,
+        "name": "ipad",
+        "price": 800.49,
+        "image" : "./image/ipad.jpg",
+        "desc" :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    
+    },
+    {
+        "id" : 3,
+        "name": "iphone 13",
+        "price": 1200.99,
+        "image" : "./image/iphone13.jpg",
+        "desc" :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    
+    },
+    {
+        "id" : 4,
+        "name": "samsung tab",
+        "price": 600.79,
+        "image" : "./image/samsungtabjpg.jpg",
+        "desc" :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    
+    },
+    {
+        "id" : 5,
+        "name": "samsung watch",
+        "price": 300.49,
+        "image" : "./image/samsungwatch.jpg",
+        "desc" :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+]
