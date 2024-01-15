@@ -1,20 +1,16 @@
-const CartItems = document.querySelector(".cart-items");
 
-let cartTotal = 0;
-function displayCartItems() {
-  const items = JSON.parse(localStorage.getItem("cart"));
+function displayCartDetails() {
+  const items = JSON.parse(localStorage.getItem("title"));
   items.forEach((item) => {
-    const cartItem = document.createElement("div");
-    cartItem.className = "cart_item";
-    cartItem.innerHTML = `
-    <p class="cart_id">${item.id}</p>
-              <p class="cart_title">${item.title}</p>
-              <img src="${item.image}" alt="${item.title}" class="cart_img" />
-              <p class="cart_price">${item.price}</p>
-              <p class="cart_delete">Delete</p>
-    `;
-    CartItems.appendChild(cartItem);
+    const subtitle = document.querySelector(".data__subtitle");
+    const title = document.querySelector(".data__title");
+    const desc = document.querySelector(".data__description");
+    const image = document.querySelector(".tech__img");
+    subtitle.innerHTML = item.subtitle
+    title.innerHTML = item.title
+    desc.innerHTML = item.description
+    image.setAttribute = item.image
   });
 }
 
-displayCartItems();
+displayCartDetails();
