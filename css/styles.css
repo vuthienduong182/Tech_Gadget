@@ -9,11 +9,21 @@
   --color-green: #00d656;
 }
 
+
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
   box-sizing: border-box;
+
 }
+
+div.card.p-3.ps-5.pe-5{
+  margin: 0;
+  border: 0px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+}
+
 html {
   font-size: 10px;
   /* 1 rem 10px */
@@ -29,6 +39,12 @@ a {
 ul {
   list-style: none;
 }
+
+.btn btn-primary w-100 mx-auto{
+  padding-bottom: 10px;
+}
+
+
 .container {
   max-width: 114rem;
   margin: 0 auto;

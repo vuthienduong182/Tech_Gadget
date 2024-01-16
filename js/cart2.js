@@ -98,27 +98,51 @@ let galleryarray =[
 
 showGallery(galleryarray)
 
-function showGallery(currarray){
+// function showGallery(currarray){
+
+//     document.getElementById("card").innerText = "";
+
+//     for(var i = 0; i < currarray.length; i++)
+//     {
+//         document.getElementById("card").innerHTML += 
+//         `
+//             <div class="col-md-4 mt-4" id = "card">
+//                 <div class="card p-3 ps-5 pe-5">
+//                     <h4 class="text-capitalize text-center">${currarray[i].name}<h4/>
+//                     <img src ="${currarray[i].src}" class ="object-fit-contain" width = "100% height ="350px">
+//                     <p class="mt-2">${currarray[i].desc}</p>
+//                     <button class = "btn btn-primary w-100 mx-auto">More</button>
+//                     <button class = "btn btn-primary w-100 mx-auto">Add to cart</button>
+//                 <div/>
+//             </div>
+
+//         `
+//     }
+// }
+
+function showGallery(currarray) {
 
     document.getElementById("card").innerText = "";
 
-    for(var i = 0; i < currarray.length; i++)
-    {
-        document.getElementById("card").innerHTML += 
-        `
-        
-            <div class="col-md-4 mt-4" id = "card">
+    for (var i = 0; i < currarray.length; i++) {
+        document.getElementById("card").innerHTML +=
+            `
+            <div class="col-md-4 mt-4" id="card">
                 <div class="card p-3 ps-5 pe-5">
-                    <h4 class="text-capitalize text-center">${currarray[i].name}<h4/>
-                    <img src ="${currarray[i].src}" width = "100% height ="350px">
+                    <h4 class="text-capitalize text-center">${currarray[i].name}</h4>
+                    <img src="${currarray[i].src}" width="auto" height="auto">
                     <p class="mt-2">${currarray[i].desc}</p>
-                    <button class = "btn btn-primary w-100 mx-auto">More</button>
-                <div/>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary">More</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
             </div>
-
-        `
+        `;
     }
 }
+
+
 
 
 //live searching
