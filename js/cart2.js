@@ -161,14 +161,20 @@ function showGallery(currarray) {
                 <div class="card p-3 ps-5 pe-5">
                     <h4 class="text-capitalize text-center">${currarray[i].name}</h4>
                     <img src="${currarray[i].src}" width="auto" height="auto">
-                    <p class="mt-2" style="font-size: 15px;text-align:center; font-family: 'Poppins', sans-serif;">${currarray[i].desc}</p>
-                    <p class="mt-2" style="color: red; font-size: 15px; font-weight: bold; text-align:center">${currarray[i].price}</p>
-                    <button class="btn btn-primary" style="font-size: 13px;">Add to cart</button>
+                    <p class="mt-2">${currarray[i].desc}</p>
+                    <p class="mt-2">${currarray[i].price}</p>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary">Details</button>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
                 </div>
             </div>
         `;
     }
 }
+
+
+
 
 
 //live searching
