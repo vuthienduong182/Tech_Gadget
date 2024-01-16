@@ -161,7 +161,7 @@ function showGallery(currarray) {
                     <p class="mt-2">${currarray[i].desc}</p>
                     <p class="mt-2">${currarray[i].price}</p>
                     <div class="d-flex justify-content-between">
-                        <button class="btn btn-primary">More</button>
+                        <button class="btn btn-primary">Details</button>
                         <button class="btn btn-primary">Add to cart</button>
                     </div>
                 </div>
@@ -169,6 +169,7 @@ function showGallery(currarray) {
         `;
     }
 }
+
 
 
 
