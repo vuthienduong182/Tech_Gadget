@@ -1,22 +1,21 @@
-
 //filter array
 
 let filterarray = [];
 let galleryarray =[
     {
         id : 1,
-        name: "Iphone 12 Pro Max White",
+        name: "Iphone 15 Pro Max ",
         price: "$900,00",
-        src : "./image/Iphone12ProMaxWhite.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        src : "./image/iphone15promax.webp",
+        desc :"iPhone 15 Pro Max 256GB Natural Titan"
     
     },
     {
         id : 2,
-        name: "Iphone 12 Pro Max Dark Blue",
+        name: "Iphone 14 Pro Max",
         price: "$900,00",
-        src : "./image/Iphone12ProMaxDarkBlue.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        src : "./image/iphone_14_pro.webp",
+        desc :"iPhone 14 Pro Max 128GB Purple"
     
     },
     {
@@ -24,45 +23,45 @@ let galleryarray =[
         name: "Iphone 13",
         price: "$900,00",
         src : "./image/Iphone12.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"iPhone 13 128GB"
     
     },
     {
         id : 4,
         name: "AirPod Pro",
-        price: "$900,00",
+        price: "$249",
         src : "./image/AirPodPro.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"AirPods Pro 2nd generation (USB-C)"
     
     },
     {
         id : 5,
         name: "AirPod 2nd Generation",
-        price: "$900,00",
+        price: "$129",
         src : "./image/Airpod2.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"AirPods 2nd generation"
     },
 
     {
         id : 6,
-        name: "Headphone",
+        name: "Sony-WH1000XM5",
         price: "$900,00",
-        src : "./image/tainghe.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        src : "./image/sonywh1000xm5.webp",
+        desc :"Noise cancellation technology WH-1000XM5"
     },
     {
         id : 7,
-        name: "MacBook",
+        name: "MacBook Air M1",
         price: "$900,00",
         src : "./image/macBook.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Apple MacBook Air M1 256GB 2020"
     },
     {
         id : 8,
-        name: "Speaker",
+        name: "JBL Charge 4",
         price: "$900,00",
         src : "./image/loaJBL.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Wireless Speaker JBL Charge 4"
     },
 
     {
@@ -70,7 +69,7 @@ let galleryarray =[
         name: "Samsung Galaxy Z Fold 5",
         price: "$900,00",
         src : "./image/galaxyzfold5xam1.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Samsung Galaxy Z Fold5 12GB 256GB"
     },
 
     {
@@ -83,9 +82,9 @@ let galleryarray =[
 
     {
         id : 11,
-        name: "Xiaomi Mi11 Ultra",
+        name: "Samsung Galaxy S23",
         price: "$900,00",
-        src : "./image/XiaomiMi11Ultra.png",
+        src : "./image/samsungGalaxys23.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
 
@@ -93,29 +92,54 @@ let galleryarray =[
         id : 12,
         name: "Samsung Galaxy S21 Ultra 5G",
         price: "$900,00",
-        src : "./image/Samsung Galaxy S21 Ultra 5G.png",
+        src : "./image/samsunggalaxys21ultra.png",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },    
     
     {
         id : 13,
-        name: "MacBook Pro",
+        name: "MacBook Pro 14 inch",
         price: "$900,00",
-        src : "./image/MacBookPro.png",
+        src : "./image/macbook_pro_14.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id : 14,
-        name: "MacBook Pro",
+        name: "MacBook Air M2",
         price: "$900,00",
-        src : "./image/MacBookPro.png",
+        src : "./image/macbook_air_m2.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
+
     {
-        id : 13,
-        name: "MacBook Pro",
+        id : 15,
+        name: "MacBook Pro 13",
         price: "$900,00",
-        src : "./image/MacBookPro.png",
+        src : "./image/macbook_pro_13.webp",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        id : 16,
+        name: "Sony Playstation 5 Bundle ASIA-00441",
+        price: "$900,00",
+        src : "./image/Playstation5.webp",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        id : 17,
+        name: "MacBook Pro 13",
+        price: "$900,00",
+        src : "./image/taycamps5.webp",
+        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },    
+    
+    {
+        id : 18,
+        name: "OFFICIAL XBOX SERIES X&S CONTROLLER ",
+        price: "$900,00",
+        src : "./image/taycamxbox.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     
@@ -125,27 +149,6 @@ let galleryarray =[
 
 showGallery(galleryarray)
 
-// function showGallery(currarray){
-
-//     document.getElementById("card").innerText = "";
-
-//     for(var i = 0; i < currarray.length; i++)
-//     {
-//         document.getElementById("card").innerHTML += 
-//         `
-//             <div class="col-md-4 mt-4" id = "card">
-//                 <div class="card p-3 ps-5 pe-5">
-//                     <h4 class="text-capitalize text-center">${currarray[i].name}<h4/>
-//                     <img src ="${currarray[i].src}" class ="object-fit-contain" width = "100% height ="350px">
-//                     <p class="mt-2">${currarray[i].desc}</p>
-//                     <button class = "btn btn-primary w-100 mx-auto">More</button>
-//                     <button class = "btn btn-primary w-100 mx-auto">Add to cart</button>
-//                 <div/>
-//             </div>
-
-//         `
-//     }
-// }
 
 function showGallery(currarray) {
 
@@ -153,24 +156,19 @@ function showGallery(currarray) {
 
     for (var i = 0; i < currarray.length; i++) {
         document.getElementById("card").innerHTML +=
-            `
+        `
             <div class="col-md-4 mt-4" id="card">
                 <div class="card p-3 ps-5 pe-5">
                     <h4 class="text-capitalize text-center">${currarray[i].name}</h4>
                     <img src="${currarray[i].src}" width="auto" height="auto">
-                    <p class="mt-2">${currarray[i].desc}</p>
-                    <p class="mt-2">${currarray[i].price}</p>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-primary">More</button>
-                        <button class="btn btn-primary">Add to cart</button>
-                    </div>
+                    <p class="mt-2" style="font-size: 15px;text-align:center; font-family: 'Poppins', sans-serif;">${currarray[i].desc}</p>
+                    <p class="mt-2" style="color: red; font-size: 15px; font-weight: bold; text-align:center">${currarray[i].price}</p>
+                    <button class="btn btn-primary" style="font-size: 13px;">Add to cart</button>
                 </div>
             </div>
         `;
     }
 }
-
-
 
 
 //live searching
