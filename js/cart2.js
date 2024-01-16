@@ -6,6 +6,7 @@ let galleryarray =[
         id : 1,
         name: "Iphone 15 Pro Max ",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_Iphone15.html",
         src : "./image/iphone15promax.webp",
         desc :"iPhone 15 Pro Max 256GB Natural Titan"
     
@@ -14,6 +15,7 @@ let galleryarray =[
         id : 2,
         name: "Iphone 14 Pro Max",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_Iphone14.html",
         src : "./image/iphone_14_pro.webp",
         desc :"iPhone 14 Pro Max 128GB Purple"
     
@@ -22,6 +24,7 @@ let galleryarray =[
         id : 3,
         name: "Iphone 13",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_Iphone13.html",
         src : "./image/Iphone12.png",
         desc :"iPhone 13 128GB"
     
@@ -30,6 +33,7 @@ let galleryarray =[
         id : 4,
         name: "AirPod Pro",
         price: "$249",
+        link: "./ShoppingDetails/Detail_AirPod.html",
         src : "./image/AirPodPro.png",
         desc :"AirPods Pro 2nd generation (USB-C)"
     
@@ -46,6 +50,7 @@ let galleryarray =[
         id : 6,
         name: "Sony-WH1000XM5",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_WH100XM5.html",
         src : "./image/sonywh1000xm5.webp",
         desc :"Noise cancellation technology WH-1000XM5"
     },
@@ -164,7 +169,7 @@ function showGallery(currarray) {
                     <p class="mt-2">${currarray[i].desc}</p>
                     <p class="mt-2">${currarray[i].price}</p>
                     <div class="d-flex justify-content-between">
-                        <button class="btn btn-primary">Details</button>
+                        <a href="${currarray[i].link}"><button class="btn btn-primary" >Details</button></a>
                         <button class="btn btn-primary">Add to cart</button>
                     </div>
                 </div>
