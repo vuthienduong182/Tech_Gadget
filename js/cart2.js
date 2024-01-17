@@ -56,8 +56,9 @@ let galleryarray =[
     },
     {
         id : 7,
-        name: "MacBook Air M1",
+        name: "MacBook Pro M2",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_MacM2.html",
         src : "./image/macBook.png",
         desc :"Apple MacBook Air M1 256GB 2020"
     },
@@ -73,6 +74,7 @@ let galleryarray =[
         id : 9,
         name: "Samsung Galaxy Z Fold 5",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_ZFold.html",
         src : "./image/galaxyzfold5xam1.webp",
         desc :"Samsung Galaxy Z Fold5 12GB 256GB"
     },
@@ -81,6 +83,7 @@ let galleryarray =[
         id : 10,
         name: "Samsung Z Flip 5",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_ZFlip.html",
         src : "./image/Zplip5.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
@@ -89,6 +92,7 @@ let galleryarray =[
         id : 11,
         name: "Samsung Galaxy S23",
         price: "$900,00",
+        link: "./ShoppingDetails/Detail_S23.html",
         src : "./image/samsungGalaxys23.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
@@ -110,7 +114,7 @@ let galleryarray =[
     },
     {
         id : 14,
-        name: "MacBook Air M2",
+        name: "MacBook Air M1",
         price: "$900,00",
         src : "./image/macbook_air_m2.webp",
         desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
