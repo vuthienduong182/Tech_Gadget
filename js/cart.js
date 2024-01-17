@@ -39,3 +39,14 @@ function displayCartItems() {
 }
 
 displayCartItems();
+
+function deleteProduct(){
+  const boxes = document.querySelectorAll('.cart_item');
+
+  boxes.forEach(box => {
+    box.remove();
+  });
+  localStorage.removeItem("cart");
+}
+
+
