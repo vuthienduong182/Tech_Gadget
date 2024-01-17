@@ -85,7 +85,7 @@ let galleryarray =[
         price: "$900,00",
         link: "./ShoppingDetails/Detail_ZFlip.html",
         src : "./image/Zplip5.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Samsung Z Flip 5 Green Neon"
     },
 
     {
@@ -94,62 +94,69 @@ let galleryarray =[
         price: "$900,00",
         link: "./ShoppingDetails/Detail_S23.html",
         src : "./image/samsungGalaxys23.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Samsung Galaxy S23 Dark Green 128gb"
     },
 
     {
         id : 12,
         name: "Samsung Galaxy S21 Ultra 5G",
         price: "$900,00",
+        link:"/Tech_Gadget/ShoppingDetails/Detail_S21_Ultra.html",
         src : "./image/samsunggalaxys21ultra.png",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Samsung Galaxy S21 Ultra 5G LightBlue 256gb"
     },    
     
     {
         id : 13,
         name: "MacBook Pro 14 inch",
         price: "$900,00",
+        link:"/Tech_Gadget/ShoppingDetails/Detail_MacM2.html",
         src : "./image/macbook_pro_14.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"MacBook Pro 14 inch 528GB"
     },
     {
         id : 14,
         name: "MacBook Air M1",
         price: "$900,00",
+        link:"/Tech_Gadget/ShoppingDetails/Detail_MacM2.html",
         src : "./image/macbook_air_m2.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"MacBook Air M1 128gb"
     },
 
     {
         id : 15,
         name: "MacBook Pro 13",
         price: "$900,00",
+        link:"/Tech_Gadget/ShoppingDetails/Detail_MacM2.html",
         src : "./image/macbook_pro_13.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"MacBook Pro 13 Inch"
     },
 
     {
         id : 16,
         name: "Sony Playstation 5 Bundle ASIA-00441",
         price: "$900,00",
+        link:"#",
         src : "./image/Playstation5.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Sony Playstation 5 Bundle ASIA-00441 White"
     },
 
     {
         id : 17,
-        name: "MacBook Pro 13",
+        name: "Playstation 5 Controler",
         price: "$900,00",
+        link:"#",
         src : "./image/taycamps5.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"Playstation 5 Controler"
     },    
     
     {
         id : 18,
         name: "OFFICIAL XBOX SERIES X&S CONTROLLER ",
         price: "$900,00",
+        link:"#",
         src : "./image/taycamxbox.webp",
-        desc :"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        desc :"OFFICIAL XBOX SERIES X&S CONTROLLER"
     },
     
     
@@ -159,21 +166,44 @@ let galleryarray =[
 showGallery(galleryarray)
 
 
+// function showGallery(currarray) {
+
+//     document.getElementById("card").innerText = "";
+
+//     for (var i = 0; i < currarray.length; i++) {
+//         document.getElementById("card").innerHTML +=
+//         `
+//             <div class="col-md-4 mt-4" id="card">
+//                 <div class="card p-3 ps-5 pe-5">
+//                     <h4 class="text-capitalize text-center">${currarray[i].name}</h4>
+//                     <img src="${currarray[i].src}" width="auto" height="auto">
+//                     <p class="mt-2" style="font-size: 13px;font-family: 'Poppins', sans-serif;">${currarray[i].desc}</p>
+//                     <p class="mt-2" style="color: red; font-size: larger;">${currarray[i].price}</p>
+//                     <div class="d-flex justify-content-between">
+//                         <a href="${currarray[i].link}"><button class="btn btn-primary" >Details</button></a>
+//                         <button class="btn btn-primary">Add to cart</button>
+//                     </div>
+//                 </div>
+//             </div>
+//         `;
+//     }
+// }
+
 function showGallery(currarray) {
 
     document.getElementById("card").innerText = "";
 
     for (var i = 0; i < currarray.length; i++) {
         document.getElementById("card").innerHTML +=
-        `
+            `
             <div class="col-md-4 mt-4" id="card">
                 <div class="card p-3 ps-5 pe-5">
                     <h4 class="text-capitalize text-center">${currarray[i].name}</h4>
                     <img src="${currarray[i].src}" width="auto" height="auto">
-                    <p class="mt-2">${currarray[i].desc}</p>
-                    <p class="mt-2">${currarray[i].price}</p>
-                    <div class="d-flex justify-content-between">
-                        <a href="${currarray[i].link}"><button class="btn btn-primary" >Details</button></a>
+                    <p class="mt-2" style="font-size: 13px;font-family: 'Poppins', sans-serif;text-align: center">${currarray[i].desc}</p>
+                    <p class="mt-2" style="color: red; font-size: 13px; font-family: 'Poppins', sans-serif; text-align: center">${currarray[i].price}</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="${currarray[i].link}" class="btn btn-primary me-2">Details</a>
                         <button class="btn btn-primary">Add to cart</button>
                     </div>
                 </div>
