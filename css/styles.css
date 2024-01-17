@@ -10,6 +10,10 @@
   --color-green: #00d656;
 }
 
+button{
+  border: transparent;
+  font-size: large;
+}
 
 * {
   padding: 0px;
