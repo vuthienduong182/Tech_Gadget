@@ -216,6 +216,10 @@ function showGallery(currarray) {
 
 
 
+
+
+
+
 //live searching
 
 document.getElementById("myinput").addEventListener("keyup", function(){
