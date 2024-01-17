@@ -530,6 +530,7 @@ ul {
 .cart_total {
   margin-top: 2rem;
   text-align: right;
+  background-color: #db4444;
 }
 .add_to_cart {
   padding: 1rem 2rem;

@@ -13,7 +13,7 @@ function displayCartItems() {
             <p class="cart_title">${item.title}</p>
             <img src="${item.image}" alt="${item.title}" class="cart_img" />
             <p class="cart_price">${item.price}</p>
-            <button class="remove_from_cart" data-id="${item.id}">Delete</button>
+            <button class="remove_from_cart" style="background-color: red; color: white" data-id="${item.id}">Delete</button>
         `;
 
         // Thêm sự kiện click cho nút "Delete"
