@@ -95,6 +95,7 @@ const AddToCart = document.querySelectorAll(".add_to_cart");
 
 AddToCart.forEach((button) => {
   button.addEventListener("click", () => {
+    alert(`Added to cart successfully.`);
     const id = button.getAttribute("data-id");
     const title = button.getAttribute("data-title");
     const image = button.getAttribute("data-image");
@@ -106,3 +107,27 @@ AddToCart.forEach((button) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
+
+
+
+// Thêm sự kiện click cho nút "Remove from cart"
+const removeButtons = document.querySelectorAll(".remove_from_cart");
+
+removeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const id = button.getAttribute("data-id");
+        
+        // Lấy giỏ hàng từ localStorage
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Lọc ra các item khác với item có id cần xóa
+        const updatedCart = cart.filter((item) => item.id !== id);
+
+        // Cập nhật giỏ hàng trong localStorage
+        localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+        // Gọi hàm hiển thị giỏ hàng mới
+        showCart();
+    });
+});
+
