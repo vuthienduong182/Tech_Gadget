@@ -10,10 +10,6 @@
   --color-green: #00d656;
 }
 
-button{
-  border: transparent;
-  font-size: large;
-}
 
 * {
   padding: 0px;
@@ -534,7 +530,7 @@ ul {
 .cart_total {
   margin-top: 2rem;
   text-align: right;
-  background-color: #db4444;
+  
 }
 .add_to_cart {
   padding: 1rem 2rem;
@@ -545,6 +541,28 @@ ul {
   outline: none;
   margin-top: 2rem;
 }
+
+
+/* Thêm CSS để điều chỉnh "Total" */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+  text-align: right;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-amount {
+  margin-left: 10px;
+  text-align: end;
+}
+
 
 /* Authentications */
 .auth_container {

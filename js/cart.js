@@ -12,17 +12,20 @@ function deleteProduct() {
 
       // Xóa giỏ hàng từ localStorage
       localStorage.removeItem("cart");
+
+      displayCartItems();
   }
 }
 
 
-
 const CartItems = document.querySelector(".cart-items");
+const TotalRow = document.querySelector(".total-row");
 let cartTotal = 0;
 
 function displayCartItems() {
     const items = JSON.parse(localStorage.getItem("cart")) || [];
     CartItems.innerHTML = ""; // Xóa nội dung hiện tại để tránh trùng lặp
+    cartTotal = 0; // Đặt lại giá trị cartTotal mỗi khi hiển thị lại sản phẩm
 
     items.forEach((item) => {
         const cartItem = document.createElement("div");
@@ -32,7 +35,7 @@ function displayCartItems() {
             <p class="cart_title">${item.title}</p>
             <img src="${item.image}" alt="${item.title}" class="cart_img" />
             <p class="cart_price">${item.price}</p>
-            <button class="remove_from_cart" data-id="${item.id}">-</button>
+            <button class="remove_from_cart" data-id="${item.id}">Delete</button>
         `;
 
         const removeButton = cartItem.querySelector(".remove_from_cart");
@@ -56,7 +59,17 @@ function displayCartItems() {
         });
 
         CartItems.appendChild(cartItem);
+        cartTotal += parseFloat(item.price); // Cộng giá trị của item vào tổng
     });
+
+    // Hiển thị dòng "Total"
+    TotalRow.innerHTML = `
+        <div class="total-row">
+            <p class="total-label">Total</p>
+            <p class="total-amount">$${cartTotal.toFixed(2)}</p>
+        </div>
+    `;
 }
 
 displayCartItems();
+
