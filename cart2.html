@@ -57,7 +57,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .nav_list {
@@ -83,10 +83,14 @@
     margin: 0rem 0.5rem;
 }
 .nav_link {
+    /* padding-top: 20px; */
     text-decoration: none;
-    padding: 0.6rem;
-    margin: auto;
+    /* padding: 0.6rem; */
+    margin-top: 10px;
     color: var(--colo-dark-1);
+    font-size: medium;
+    padding: 15px;
+    text-align: center;
     font-size: medium;
 }
 .nav_link:hover{
@@ -103,6 +107,7 @@
     background-color: transparent;
     outline: none;
     border: none;
+    font-size: medium;
 }
 .nav_search {
     cursor: pointer;
@@ -118,6 +123,11 @@
 .nav_cart {
     margin-left: 1rem;
     cursor: pointer;
+}
+
+#myinput{
+  width: 50%;
+  font-size: medium;
 }
 
 
@@ -179,7 +189,7 @@
   </nav>
 
     <h2 class="text-center mt-2">Product Searching</h2>
-    <input type="text" class="form-control mt-3 mx-auto" id="myinput" placeholder="Live searching" style="width: 30%">
+    <input type="text" class="form-control mt-3 mx-auto" id="myinput" placeholder="Live searching">
 
     
     <div class="container">
