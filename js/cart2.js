@@ -9,7 +9,6 @@ let galleryarray =[
         link: "./ShoppingDetails/Detail_Iphone15.html",
         src : "./image/iphone15promax.webp",
         desc :"iPhone 15 Pro Max 256GB Natural Titan"
-    
     },
     {
         id : 2,
