@@ -64,10 +64,8 @@ function displayCartItems() {
 
     // Hiển thị dòng "Total"
     TotalRow.innerHTML = `
-        <div class="total-row">
             <p class="total-label">Total</p>
             <p class="total-amount">$${cartTotal.toFixed(2)}</p>
-        </div>
     `;
 }
 
