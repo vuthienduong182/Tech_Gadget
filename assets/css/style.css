@@ -76,12 +76,12 @@ img {
 }
 .bg-gray {
   background-color: #f4f5f8 !important;
-}
+} 
 .bg-primary {
   background-color: #3aafa9 !important;
 }
 .bg-secondary {
-  background-color: #a6c76c !important;
+  background-color: #2b7a78 !important;
 }
 .bg-image {
   background-color: #ccc;
@@ -178,7 +178,7 @@ a:focus {
   color: #3aafa9 !important;
 }
 .text-secondary {
-  color: #a6c76c !important;
+  color: #2b7a78 !important;
 }
 .text-dark {
   color: #333 !important;
@@ -1918,7 +1918,7 @@ blockquote.text-white cite span {
   background-color: #3aafa9;
 }
 .tip.tip-new {
-  background-color: #a6c76c;
+  background-color: #2b7a78;
 }
 .tip.tip-hot {
   background-color: #ef837b;
@@ -2659,7 +2659,6 @@ p {
   font-weight: 300;
   font-family: "Poppins";
   letter-spacing: 0;
-  color: #777;
 }
 .header-2 {
   background-color: #fff;
@@ -2690,7 +2689,7 @@ p {
 .header-2 .header-search-extended .btn:hover,
 .header-2 .header-search-extended .btn:focus,
 .header-2 .header-search-extended .btn:active {
-  color: #a6c76c;
+  color: #2b7a78;
   background-color: transparent;
 }
 .header-2 .btn-primary:not(:disabled):not(.disabled):active,
@@ -2808,15 +2807,16 @@ p {
 }
 .header-3 {
   color: #fff;
-  background-color: #333333;
+  background-color: #2b7a78;
 }
 .header-3 .header-top {
-  background-color: #333;
+  background-color: #2b7a78;
+  color: #fff;
 }
 .header-3 .header-top .container::after,
 .header-3 .header-top .container-fluid::after {
   height: 0.1rem;
-  background-color: #444444;
+  background-color: #fff;
 }
 .header-3 .header-top .header-left i {
   font-size: 1.6rem;
@@ -5844,8 +5844,8 @@ p {
 }
 .btn-secondary {
   color: #fff;
-  background-color: #a6c76c;
-  border-color: #a6c76c;
+  background-color: #17252a;
+  border-color: #17252a;
   box-shadow: none;
 }
 .btn-secondary:hover,
@@ -5862,8 +5862,8 @@ p {
 .btn-secondary.disabled,
 .btn-secondary:disabled {
   color: #fff;
-  background-color: #a6c76c;
-  border-color: #a6c76c;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
 }
 .btn-white {
   color: #333;
@@ -5901,8 +5901,8 @@ p {
 .btn-white-2:not(:disabled):not(.disabled).active,
 .show > .btn-white-2.dropdown-toggle {
   color: #fff;
-  background-color: #a6c76c;
-  border-color: #a6c76c;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-white-2.disabled,
@@ -6255,8 +6255,8 @@ p {
 .btn-outline-white-2:not(:disabled):not(.disabled).active,
 .show > .btn-outline-white-2.dropdown-toggle {
   color: #fff;
-  background-color: #a6c76c;
-  border-color: #a6c76c;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-outline-white-2.disabled,
@@ -6579,7 +6579,7 @@ p {
 }
 .product-label.label-new {
   color: #fff;
-  background-color: #a6c76c;
+  background-color: #2b7a78;
 }
 .product-label.label-top {
   color: #fff;
@@ -6595,7 +6595,7 @@ p {
 }
 .product-label.label-secondary {
   color: #fff;
-  background-color: #a6c76c;
+  background-color: #2b7a78;
 }
 .product-label-text {
   color: #3aafa9;
@@ -7078,7 +7078,7 @@ p {
 .product.product-4 .btn-product:hover,
 .product.product-4 .btn-product:focus {
   color: #fff;
-  background-color: #a6c76c;
+  background-color: #2b7a78;
 }
 .product.product-4 .btn-product:hover span,
 .product.product-4 .btn-product:focus span {
@@ -8022,7 +8022,7 @@ p {
 .btn-video:hover,
 .btn-video:focus {
   color: #fff;
-  background-color: #a6c76c;
+  background-color: #2b7a78;
   box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2);
 }
 .video-banner-poster .video-banner-title {
@@ -13456,7 +13456,7 @@ button:focus {
   color: #3aafa9;
 }
 .in-stock {
-  color: #a6c76c;
+  color: #2b7a78;
 }
 .out-of-stock {
   color: #ef837b;
