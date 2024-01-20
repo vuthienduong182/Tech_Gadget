@@ -105,7 +105,7 @@
 .intro-banners .banner-link:hover,
 .intro-banners .banner-link:focus {
   color: #fff;
-  background-color: #fcb941;
+  background-color: #3aafa9;
   text-decoration: none;
 }
 .featured .nav.nav-border-anim .nav-link:before {
@@ -161,7 +161,7 @@
 .nav-pills.nav-big .nav-link:hover,
 .nav-pills.nav-big .nav-link:focus,
 .nav-pills.nav-big .nav-link.active {
-  color: #fcb941;
+  color: #3aafa9;
 }
 .nav-pills.nav-big .nav-item.show .nav-link,
 .nav-pills.nav-big .nav-item .nav-link.active {
@@ -204,16 +204,16 @@
 }
 .btn-product-icon {
   color: #333;
-  background-color: #fcb941;
+  background-color: #3aafa9;
 }
 .btn-product-icon span {
   color: #333;
-  background-color: #fcb941;
+  background-color: #3aafa9;
 }
 .btn-product-icon:hover,
 .btn-product-icon:focus {
   color: #333;
-  background-color: #fcb941;
+  background-color: #3aafa9;
 }
 .deal-container .heading {
   padding-bottom: 0.5rem;
@@ -306,7 +306,7 @@
   padding: 0.9rem 0 0.3rem;
   margin-left: 0.8rem;
   margin-right: 0.8rem;
-  background-color: #fcb941;
+  background-color: #3aafa9;
   border-radius: 0.3rem;
   border: none;
   margin-bottom: 2rem;
@@ -448,7 +448,7 @@
   bottom: 0;
   width: 100%;
   height: 0.1rem;
-  background-color: #fcb941;
+  background-color: #3aafa9;
   transform-origin: right center;
   transform: scale(0, 1);
   transition: transform 0.3s ease;
@@ -472,7 +472,7 @@
 }
 .widget-call i {
   display: inline-block;
-  color: #fcb941;
+  color: #3aafa9;
   font-size: 3rem;
   line-height: 1;
   position: absolute;
@@ -489,7 +489,7 @@
 }
 .widget-call a:hover,
 .widget-call a:focus {
-  color: #fcb941;
+  color: #3aafa9;
   box-shadow: none;
 }
 .footer-bottom .container {
