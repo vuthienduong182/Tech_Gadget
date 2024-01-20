@@ -168,7 +168,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #b57c43;
+  color: #2b7a78;
   text-decoration: none;
 }
 .link-underline {
@@ -14765,7 +14765,6 @@ button:focus {
   font-family: "molla";
   font-style: normal;
   font-weight: normal;
-  speak: none;
   display: inline-block;
   text-decoration: inherit;
   text-align: center;
@@ -16348,4 +16347,9 @@ button:focus {
 
 .header-bottom .menu > li > .sf-with-ul#sf-with-ul-blog{
     padding-right: 1rem;
+}
+
+.cta-content .btn:hover, .input-group-append .btn:hover {
+  background-color: #2b7a78;
+  border: #2b7a78;
 }
