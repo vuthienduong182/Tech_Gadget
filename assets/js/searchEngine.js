@@ -111,7 +111,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Fold 5 512 GB',
         price: 899,
-        link: '#',
+        link: 'productSamsungGalaxyFold5.html',
         
     },
 
