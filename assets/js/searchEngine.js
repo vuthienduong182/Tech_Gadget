@@ -1,11 +1,11 @@
 const product =[
     {
         id: 0,
-        image: 'assets/images/samsung/galaxy-z-flip5-highlights-camera-flexcam.jpg',
+        image: 'assets/images/tablet/ipad-pro-2022-11-inch-m2.webp',
         topic: 'Smartphones',
-        title: 'Samsung Galaxy Z Flip 5 512GB',
+        title: 'iPad Pro 2022 11 inch M2',
         price: 899,
-        link: '#',
+        link: 'productiPadPro.html',
     },
 
     {
@@ -48,9 +48,9 @@ const product =[
     },
     {
         id: 5,
-        image: 'assets/images/samsung/galaxy-z-fold-5-kem-1.webp',
+        image: 'assets/images/samsung/samsung-galaxy-s23-128gb_2_.webp',
         topic: 'Smartphones',
-        title: 'Samsung Galaxy Z Fold 5 512GB',
+        title: 'Samsung Galaxy S23 128GB',
         price: 899,
         link: '#',
 
@@ -139,7 +139,7 @@ const product =[
         id: 14,
         image: 'assets/images/iPhone/vn_iphone_15_green.webp',
         topic: 'Smartphones',
-        title: 'iPhone 15 512GB',
+        title: 'iPhone 15 Plus 512GB',
         price: 999,
         link: '#',
         
