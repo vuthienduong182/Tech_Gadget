@@ -10,11 +10,11 @@ const product =[
 
     {
         id: 1,
-        image: 'assets/images/samsung/samsunggalaxyzflipxam4.webp',
-        topic: 'Smartphones',
-        title: 'Samsung Galaxy Z Flip 4 512GB',
-        price: 890,
-        link: 'product.html',
+        image: 'assets/images/accessories/airpodPro1.webp',
+        topic: 'Accessories',
+        title: 'Apple AirPods Pro 2022',
+        price: 290,
+        link: 'productAirPod.html',
 
     },
     {
