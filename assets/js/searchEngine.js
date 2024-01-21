@@ -87,11 +87,11 @@ const product =[
 
     {
         id: 9,
-        image: 'assets/images/laptop/20_6_3_2.webp',
+        image: 'assets/images/laptop/dellXPS13_1.jpg',
         topic: 'Laptop',
-        title: 'DELL XPS 2022 8GB 512GB',
+        title: 'XPS 13 Plus 8GB 512GB',
         price: 899,
-        link: '#',
+        link: 'productDell.html',
         
     },
 
