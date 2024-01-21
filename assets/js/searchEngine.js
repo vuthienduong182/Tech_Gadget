@@ -5,6 +5,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
         price: 899,
+        link: '#',
     },
 
     {
@@ -22,6 +23,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
         price: 899,
+        link: '#',
 
     },
 
@@ -31,6 +33,7 @@ const product =[
         topic: 'Smartphones',
         title: 'iPhone 14 Pro 512GB',
         price: 899,
+        link: '#',
 
     },
 
@@ -49,6 +52,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Fold 5 512GB',
         price: 899,
+        link: '#',
 
     },
     {
@@ -57,6 +61,7 @@ const product =[
         topic: 'Smartwatch',
         title: 'Apple Watch SE 2023',
         price: 899,
+        link: '#',
 
     },
 
@@ -64,8 +69,9 @@ const product =[
         id: 7,
         image: 'assets/images/laptop/macbook-pro-2021-06_8.webp',
         topic: 'Laptop',
-        title: 'Macbook Pro 2021 512GB',
+        title: 'Macbook Pro 14 M1 Pro 10 CPU - 16 GPU 16GB 1TB 2021',
         price: 1909,
+        link: 'productMacbookPro14.html',
 
     },
 
@@ -75,6 +81,7 @@ const product =[
         topic: 'Laptop',
         title: 'Macbook Air M2 256GB',
         price: 1900,
+        link: '#',
 
     },
 
@@ -84,6 +91,7 @@ const product =[
         topic: 'Laptop',
         title: 'DELL XPS 2022 8GB 512GB',
         price: 899,
+        link: '#',
         
     },
 
@@ -93,6 +101,7 @@ const product =[
         topic: 'Smartwatch',
         title: 'Samsung Galaxy Watch SE 2022',
         price: 609,
+        link: '#',
         
     },
 
@@ -102,6 +111,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Fold 5 512 GB',
         price: 899,
+        link: '#',
         
     },
 
@@ -111,6 +121,7 @@ const product =[
         topic: 'Smartphones',
         title: 'Samsung Galaxy S23 Ultra 5G',
         price: 899,
+        link: '#',
         
     },
 
@@ -120,6 +131,7 @@ const product =[
         topic: 'Smartphones',
         title: 'iPhone 14 128GB',
         price: 799,
+        link: '#',
         
     },
 
@@ -129,6 +141,7 @@ const product =[
         topic: 'Smartphones',
         title: 'iPhone 15 512GB',
         price: 999,
+        link: '#',
         
     },
 
@@ -138,6 +151,7 @@ const product =[
         topic: 'Smartwatch',
         title: 'Apple Watch Ultra 2023',
         price: 899,
+        link: '#',
         
     },
 ]
