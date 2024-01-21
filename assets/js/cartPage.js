@@ -29,25 +29,37 @@ function displayCartPages() {
         <td class="total-col">$990.00</td>
         <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
         `;
-
-        // // Thêm sự kiện click cho nút "Delete"
-        // const removeButton = cartItem.querySelector(".remove_from_cart");
-        // removeButton.addEventListener("click", () => {
-        //     const id = removeButton.getAttribute("data-id");
-
-        //     // Lấy giỏ hàng từ localStorage
-        //     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-        //     // Lọc ra item có id cần xóa
-        //     const updatedCart = cart.filter((item) => item.id !== id);
-
-        //     // Cập nhật giỏ hàng trong localStorage
-        //     localStorage.setItem("cart", JSON.stringify(updatedCart));
-
-        //     // Gọi hàm hiển thị giỏ hàng mới
-        //     displayCartItems();
         CartPage.appendChild(cartItem);
-        });
-    };
+    });
+};
 
-    displayCartPages();
+function calTotalPage(){
+    let totalNum = 0;
+    total = document.getElementById("summary-subtotal");
+    const items = JSON.parse(localStorage.getItem("cart")) || [];
+    items.forEach((item) => {
+        totalNum += Number(item.price);
+    });
+    total.innerHTML= "$" + totalNum;
+    document.getElementById("summary-total").innerHTML = "$" + totalNum;
+    return totalNum
+}
+
+const radioButtons = document.getElementsByName('shipping');
+
+radioButtons.forEach(radioButton => {
+  radioButton.addEventListener('click', function() {
+    if (this.checked) {
+      if (this.id == "free-shipping"){
+        document.getElementById("summary-total").innerHTML = "$" + (calTotalPage() + 0);
+      } else if (this.id == "standart-shipping"){
+        document.getElementById("summary-total").innerHTML = "$" + (calTotalPage() + 10);
+      } else if (this.id == "express-shipping"){
+        document.getElementById("summary-total").innerHTML = "$" + (calTotalPage() + 20);
+      }
+    }
+  });
+});
+
+calTotalPage();
+displayCartPages();
