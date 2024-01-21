@@ -101,7 +101,7 @@ const displayItem = (item)=> {
                 </div>
             </div>
         </div>
-            </div>
+        </div>
             
         `
         )
