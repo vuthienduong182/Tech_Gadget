@@ -2,6 +2,7 @@ const product =[
     {
         id: 0,
         image: 'assets/images/samsung/galaxy-z-flip5-highlights-camera-flexcam.jpg',
+        topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
         price: 899,
     },
@@ -9,38 +10,135 @@ const product =[
     {
         id: 1,
         image: 'assets/images/samsung/samsunggalaxyzflipxam4.webp',
+        topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 4 512GB',
         price: 890,
+        link: 'product.html',
+
     },
     {
         id: 2,
-        image: 'assets/images/samsung/galaxy-z-flip5-highlights-camera-flexcam.jpg',
+        image: 'assets/images/samsung/sm-s901_galaxys22_front_phantomwhite_211122.webp',
+        topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
         price: 899,
+
     },
+
     {
         id: 3,
         image: 'assets/images/iPhone/iphone14pro.webp',
+        topic: 'Smartphones',
         title: 'iPhone 14 Pro 512GB',
         price: 899,
+
     },
+
     {
         id: 4,
         image: 'assets/images/iPhone/iphone15blue.webp',
+        topic: 'Smartphones',
         title: 'iPhone 15 Pro 512GB',
         price: 899,
+        link: 'productIphone15.html'
+
     },
     {
         id: 5,
         image: 'assets/images/samsung/galaxy-z-fold-5-kem-1.webp',
+        topic: 'Smartphones',
         title: 'Samsung Galaxy Z Fold 5 512GB',
         price: 899,
+
     },
     {
         id: 6,
         image: 'assets/images/smartwatch/apple-watch-se-2023.webp',
+        topic: 'Smartwatch',
         title: 'Apple Watch SE 2023',
         price: 899,
+
+    },
+
+    {
+        id: 7,
+        image: 'assets/images/laptop/macbook-pro-2021-06_8.webp',
+        topic: 'Laptop',
+        title: 'Macbook Pro 2021 512GB',
+        price: 1909,
+
+    },
+
+    {
+        id: 8,
+        image: 'assets/images/laptop/macbook_air_m2_1_1.jpg',
+        topic: 'Laptop',
+        title: 'Macbook Air M2 256GB',
+        price: 1900,
+
+    },
+
+    {
+        id: 9,
+        image: 'assets/images/laptop/20_6_3_2.webp',
+        topic: 'Laptop',
+        title: 'DELL XPS 2022 8GB 512GB',
+        price: 899,
+        
+    },
+
+    {
+        id: 10,
+        image: 'assets/images/smartwatch/1_568.webp',
+        topic: 'Smartwatch',
+        title: 'Samsung Galaxy Watch SE 2022',
+        price: 609,
+        
+    },
+
+    {
+        id: 11,
+        image: 'assets/images/samsung/galaxy-z-fold-5-kem-1.webp',
+        topic: 'Smartphones',
+        title: 'Samsung Galaxy Z Fold 5 512 GB',
+        price: 899,
+        
+    },
+
+    {
+        id: 12,
+        image: 'assets/images/samsung/s23-ultra-xanh.webp',
+        topic: 'Smartphones',
+        title: 'Samsung Galaxy S23 Ultra 5G',
+        price: 899,
+        
+    },
+
+    {
+        id: 13,
+        image: 'assets/images/iPhone/iphone-14_1.png',
+        topic: 'Smartphones',
+        title: 'iPhone 14 128GB',
+        price: 799,
+        
+    },
+
+    {
+        id: 14,
+        image: 'assets/images/iPhone/vn_iphone_15_green.webp',
+        topic: 'Smartphones',
+        title: 'iPhone 15 512GB',
+        price: 999,
+        
+    },
+
+    {
+        id: 15,
+        image: 'assets/images/smartwatch/apple-watch-ultra-2-49mm-4g_1_.jpg',
+        topic: 'Smartwatch',
+        title: 'Apple Watch Ultra 2023',
+        price: 899,
+        
     },
 ]
 
@@ -56,13 +154,13 @@ document.getElementById("q").addEventListener('keyup', (e)=>{
 
 const displayItem = (item)=> {
     document.getElementById('root').innerHTML = item.map((item)=> {
-        var{image, title, price} = item;
+        var{image, topic,title, price, link} = item;
         return(
             ` 
                 <div class="col-6 col-md-4 col-lg-4 col-xl-3">
                     <div class="product">
                         <figure class="product-media">
-                            <a href="product.html">
+                            <a href= ${link}>
                                 <img src= ${image} alt="Product image" class="product-image">
                             </a>
 
@@ -79,9 +177,9 @@ const displayItem = (item)=> {
 
                         <div class="product-body">
                             <div class="product-cat">
-                                <a href="#">Laptop</a>
+                                <a href="#"> ${topic}</a>
                             </div>
-                            <h3 class="product-title"><a href="product.html">$ ${title}</a></h3>
+                            <h3 class="product-title"><a href="product.html"> ${title}</a></h3>
                             <div class="product-price">
                                 $ ${price}
                             </div>
