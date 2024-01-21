@@ -59,49 +59,48 @@ const displayItem = (item)=> {
         var{image, title, price} = item;
         return(
             ` 
-            <div class = "row">
-            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="product">
-                <figure class="product-media">
-                    <a href="product.html">
-                        <img src= ${image} alt="Product image" class="product-image">
-                    </a>
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                    <div class="product">
+                        <figure class="product-media">
+                            <a href="product.html">
+                                <img src= ${image} alt="Product image" class="product-image">
+                            </a>
 
-                    <div class="product-action-vertical">
-                        <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
-                    </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                            </div>
 
-                    <div class="product-action action-icon-top">
-                        <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
-                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                        <a href="#" class="btn-product btn-compare" title="Compare"><span>compare</span></a>
-                    </div>
-                </figure>
+                            <div class="product-action action-icon-top">
+                                <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                <a href="#" class="btn-product btn-compare" title="Compare"><span>compare</span></a>
+                            </div>
+                        </figure>
 
-                <div class="product-body">
-                    <div class="product-cat">
-                        <a href="#">Laptop</a>
-                    </div>
-                    <h3 class="product-title"><a href="product.html">$ ${title}</a></h3>
-                    <div class="product-price">
-                        $ ${price}
-                    </div>
-                    <div class="ratings-container">
-                        <div class="ratings">
-                            <div class="ratings-val" style="width: 0%;"></div>
-                        </div>
-                        <span class="ratings-text">( 809 Reviews )</span>
-                    </div>
+                        <div class="product-body">
+                            <div class="product-cat">
+                                <a href="#">Laptop</a>
+                            </div>
+                            <h3 class="product-title"><a href="product.html">$ ${title}</a></h3>
+                            <div class="product-price">
+                                $ ${price}
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings">
+                                    <div class="ratings-val" style="width: 0%;"></div>
+                                </div>
+                                <span class="ratings-text">( 809 Reviews )</span>
+                            </div>
 
-                    <div class="product-nav product-nav-dots">
-                        <a href="#" class="active" style="background: #727272;"><span class="sr-only">Color name</span></a>
-                        <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
-                    </div>
+                            <div class="product-nav product-nav-dots">
+                                <a href="#" class="active" style="background: #727272;"><span class="sr-only">Color name</span></a>
+                                <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            </div>
 
                 </div>
             </div>
         </div>
-        </div>
+            </div>
             
         `
         )
