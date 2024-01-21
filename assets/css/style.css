@@ -16353,3 +16353,7 @@ button:focus {
   background-color: #2b7a78;
   border: #2b7a78;
 }
+
+a.sf-with-ul#About:after, a.sf-with-ul#Contact::after {
+  content: none;
+}
