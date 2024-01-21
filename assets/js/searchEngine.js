@@ -151,7 +151,7 @@ const product =[
         topic: 'Smartwatch',
         title: 'Apple Watch Ultra 2023',
         price: 899,
-        link: '#',
+        link: 'productAppleWatchUltra.html',
         
     },
 ]
