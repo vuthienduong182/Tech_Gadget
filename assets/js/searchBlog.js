@@ -3,11 +3,11 @@ const blog =
     {
         id: 0,
         image: 'assets/images/laptop/macbookpro2021.webp',
-        title: 'Compare Macbook Pro 2022 vs Macbook Air 2023',
+        title: 'Compare Macbook Pro 2022 vs Macbook Pro 2023',
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'lifestyle shopping',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -17,7 +17,7 @@ const blog =
         date: 'Nov 21, 2023 | 12 Comments',
         topic: 'in Smartphone',
         content: 'life style',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -27,7 +27,7 @@ const blog =
         date: 'Jan 21, 2023 | 24 Comments',
         topic: 'in Trending',
         content:'lifestyle fashion',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -37,7 +37,7 @@ const blog =
         date: 'Oct 12, 2023 | 34 Comments',
         topic: 'in Smartphone',
         content:'travel',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -47,7 +47,7 @@ const blog =
         date: 'Nov 11, 2023 | 23 Comments',
         topic: 'in Trending',
         content:'travel',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -57,7 +57,7 @@ const blog =
         date: 'Nov 21, 2022 | 12 Comments',
         topic: 'in Trending',
         content:'travel',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -67,7 +67,7 @@ const blog =
         date: 'Dec 12, 2023 | 232 Comments',
         topic: 'in Laptop',
         content:'lifestyle shopping',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -77,7 +77,7 @@ const blog =
         date: 'Apl 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'lifestyle shopping',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -87,7 +87,7 @@ const blog =
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'lifestyle fashion',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -97,7 +97,7 @@ const blog =
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'travel',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -107,7 +107,7 @@ const blog =
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'travel',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -117,7 +117,7 @@ const blog =
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Laptop',
         content:'lifestyle fashion',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
@@ -127,7 +127,7 @@ const blog =
         date: 'Dec 22, 2023 | 2 Comments',
         topic: 'in Smartphone',
         content: 'lifestyle fashion',
-        link: '#'
+        link: 'single-blog.html'
     },
 
     {
