@@ -477,6 +477,7 @@ $(document).ready(function () {
 		});
 	}
 
+
     /* Masonry / Grid Layout & Isotope Filter for blog/portfolio etc... */
     if ( typeof imagesLoaded === 'function' && $.fn.isotope) {
         // Portfolio
