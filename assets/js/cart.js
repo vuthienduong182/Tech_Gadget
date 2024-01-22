@@ -4,7 +4,7 @@ let cartTotal = 0;
 
 function displayCartItems() {
     const items = JSON.parse(localStorage.getItem("cart")) || [];
-    CartItems.innerHTML = ""; // Xóa nội dung hiện tại để tránh trùng lặp
+    CartItems.innerHTML = "";
 
     items.forEach((item) => {
         const cartItem = document.createElement("div");
