@@ -1,6 +1,6 @@
 const product =[
     {
-        id: 0,
+        id: 10,
         image: 'assets/images/tablet/ipad-pro-2022-11-inch-m2.webp',
         topic: 'Smartphones',
         title: 'iPad Pro 2022 11 inch M2',
@@ -9,7 +9,7 @@ const product =[
     },
 
     {
-        id: 1,
+        id: 11,
         image: 'assets/images/accessories/AirPod/airpodPro1.webp',
         topic: 'Accessories',
         title: 'Apple AirPods Pro 2022',
@@ -18,7 +18,7 @@ const product =[
 
     },
     {
-        id: 2,
+        id: 12,
         image: 'assets/images/samsung/samsunggalaxyzflipxam4.webp',
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
@@ -28,7 +28,7 @@ const product =[
     },
 
     {
-        id: 3,
+        id: 13,
         image: 'assets/images/iPhone/iphone14pro.webp',
         topic: 'Smartphones',
         title: 'iPhone 14 Pro 512GB',
@@ -38,7 +38,7 @@ const product =[
     },
 
     {
-        id: 4,
+        id: 14,
         image: 'assets/images/iPhone/iphone15blue.webp',
         topic: 'Smartphones',
         title: 'iPhone 15 Pro 512GB',
@@ -47,7 +47,7 @@ const product =[
 
     },
     {
-        id: 5,
+        id: 15,
         image: 'assets/images/samsung/samsung-galaxy-s23-128gb_2_.webp',
         topic: 'Smartphones',
         title: 'Samsung Galaxy S23 128GB',
@@ -56,7 +56,7 @@ const product =[
 
     },
     {
-        id: 6,
+        id: 16,
         image: 'assets/images/smartwatch/apple-watch-se-2023.webp',
         topic: 'Smartwatch',
         title: 'Apple Watch SE 2023',
@@ -66,7 +66,7 @@ const product =[
     },
 
     {
-        id: 7,
+        id: 17,
         image: 'assets/images/laptop/macbook-pro-2021-06_8.webp',
         topic: 'Laptop',
         title: 'Macbook Pro 14 M1 Pro 10 CPU - 16 GPU 16GB 1TB 2021',
@@ -76,7 +76,7 @@ const product =[
     },
 
     {
-        id: 8,
+        id: 18,
         image: 'assets/images/laptop/macbook_air_m2_1_1.jpg',
         topic: 'Laptop',
         title: 'Macbook Air M2 256GB',
@@ -86,7 +86,7 @@ const product =[
     },
 
     {
-        id: 9,
+        id: 19,
         image: 'assets/images/laptop/dellXPS13_1.jpg',
         topic: 'Laptop',
         title: 'XPS 13 Plus 8GB 512GB',
@@ -96,7 +96,7 @@ const product =[
     },
 
     {
-        id: 10,
+        id: 20,
         image: 'assets/images/smartwatch/1_568.webp',
         topic: 'Smartwatch',
         title: 'Samsung Galaxy Watch SE 2022',
@@ -106,7 +106,7 @@ const product =[
     },
 
     {
-        id: 11,
+        id: 21,
         image: 'assets/images/samsung/galaxy-z-fold-5-kem-1.webp',
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Fold 5 512 GB',
@@ -116,7 +116,7 @@ const product =[
     },
 
     {
-        id: 12,
+        id: 22,
         image: 'assets/images/samsung/s23-ultra-xanh.webp',
         topic: 'Smartphones',
         title: 'Samsung Galaxy S23 Ultra 5G',
@@ -126,7 +126,7 @@ const product =[
     },
 
     {
-        id: 13,
+        id: 23,
         image: 'assets/images/iPhone/iphone-14_1.png',
         topic: 'Smartphones',
         title: 'iPhone 14 128GB',
@@ -136,7 +136,7 @@ const product =[
     },
 
     {
-        id: 14,
+        id: 24,
         image: 'assets/images/iPhone/vn_iphone_15_green.webp',
         topic: 'Smartphones',
         title: 'iPhone 15 Plus 512GB',
@@ -146,7 +146,7 @@ const product =[
     },
 
     {
-        id: 15,
+        id: 25,
         image: 'assets/images/smartwatch/apple-watch-ultra-2-49mm-4g_1_.jpg',
         topic: 'Smartwatch',
         title: 'Apple Watch Ultra 2023',
@@ -168,7 +168,7 @@ document.getElementById("q").addEventListener('keyup', (e)=>{
 
 const displayItem = (item)=> {
     document.getElementById('root').innerHTML = item.map((item)=> {
-        var{image, topic,title, price, link} = item;
+        var{id, image, topic,title, price, link} = item;
         return(
             ` 
                 <div class="col-6 col-md-4 col-lg-4 col-xl-3 ${topic}">
@@ -183,7 +183,9 @@ const displayItem = (item)=> {
                             </div>
 
                             <div class="product-action action-icon-top">
-                                <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                <a href="#" class="btn-product btn-cart add-to-cart" data-id="${id}" data-title= "${title}" data-image="${image}" data-price="${price}">
+                                    <span>add to cart</span>
+                                </a>
                                 <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                 <a href="#" class="btn-product btn-compare" title="Compare"><span>compare</span></a>
                             </div>
