@@ -10,7 +10,7 @@ const product =[
 
     {
         id: 1,
-        image: 'assets/images/accessories/airpodPro1.webp',
+        image: 'assets/images/accessories/AirPod/airpodPro1.webp',
         topic: 'Accessories',
         title: 'Apple AirPods Pro 2022',
         price: 290,
