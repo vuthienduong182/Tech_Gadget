@@ -8,7 +8,7 @@
   background-color: #3aafa9 !important;
 }
 .bg-secondary {
-  background-color: #bf913d !important;
+  background-color: #2b7a78 !important;
 }
 a {
   color: #3aafa9;
@@ -24,7 +24,7 @@ a:focus {
   color: #3aafa9 !important;
 }
 .text-secondary {
-  color: #bf913d !important;
+  color: #2b7a78 !important;
 }
 .alert-primary {
   background-color: #3aafa9;
@@ -49,7 +49,7 @@ a:focus {
 }
 .btn-video:hover,
 .btn-video:focus {
-  background-color: #bf913d;
+  background-color: #2b7a78;
 }
 .breadcrumb-item a:hover,
 .breadcrumb-item a:focus {
@@ -78,8 +78,8 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #bf913d;
-  border-color: #bf913d;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-primary.disabled,
@@ -90,8 +90,8 @@ a:focus {
 }
 .btn-secondary {
   color: #fff;
-  background-color: #bf913d;
-  border-color: #bf913d;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-secondary:hover,
@@ -108,8 +108,8 @@ a:focus {
 .btn-secondary.disabled,
 .btn-secondary:disabled {
   color: #fff;
-  background-color: #bf913d;
-  border-color: #bf913d;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
 }
 .btn-white {
   color: #333;
@@ -147,8 +147,8 @@ a:focus {
 .btn-white-2:not(:disabled):not(.disabled).active,
 .show > .btn-white-2.dropdown-toggle {
   color: #fff;
-  background-color: #bf913d;
-  border-color: #bf913d;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-white-2.disabled,
@@ -493,8 +493,8 @@ a:focus {
 .btn-outline-white-2:not(:disabled):not(.disabled).active,
 .show > .btn-outline-white-2.dropdown-toggle {
   color: #fff;
-  background-color: #bf913d;
-  border-color: #bf913d;
+  background-color: #2b7a78;
+  border-color: #2b7a78;
   box-shadow: none;
 }
 .btn-outline-white-2.disabled,
@@ -653,7 +653,7 @@ a:focus {
   background-color: #3aafa9;
 }
 .product-label.label-secondary {
-  background-color: #bf913d;
+  background-color: #2b7a78;
 }
 .product-label-text {
   color: #3aafa9;
@@ -689,7 +689,7 @@ a:focus {
 }
 .product.product-4 .btn-product:hover,
 .product.product-4 .btn-product:focus {
-  background-color: #bf913d;
+  background-color: #2b7a78;
 }
 .product.product-5 .btn-product {
   color: #3aafa9;

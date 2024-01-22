@@ -27,8 +27,27 @@ function displayCartPages() {
             </div><!-- End .cart-product-quantity -->
         </td>
         <td class="total-col">$990.00</td>
-        <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
+        <td class="remove-col"><button class="btn-remove" data-id="${item.id}"><i class="icon-close"></i></button></td>
         `;
+        const removeButton = cartItem.querySelector(".btn-remove");
+        removeButton.addEventListener("click", () => {
+            const id = removeButton.getAttribute("data-id");
+
+            // Lấy giỏ hàng từ localStorage
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Lọc ra item có id cần xóa
+            const updatedCart = cart.filter((item) => item.id !== id);
+
+            // Cập nhật giỏ hàng trong localStorage
+            localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+            // Gọi hàm hiển thị giỏ hàng mới
+            displayCartPages();
+            calTotalPage();
+            displayCartItems();
+            calTotal();
+        })
         CartPage.appendChild(cartItem);
     });
 };

@@ -19,11 +19,11 @@ const product =[
     },
     {
         id: 2,
-        image: 'assets/images/samsung/sm-s901_galaxys22_front_phantomwhite_211122.webp',
+        image: 'assets/images/samsung/samsunggalaxyzflipxam4.webp',
         topic: 'Smartphones',
         title: 'Samsung Galaxy Z Flip 5 512GB',
         price: 899,
-        link: '#',
+        link: 'product.html',
 
     },
 
@@ -171,7 +171,7 @@ const displayItem = (item)=> {
         var{image, topic,title, price, link} = item;
         return(
             ` 
-                <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                <div class="col-6 col-md-4 col-lg-4 col-xl-3 ${topic}">
                     <div class="product">
                         <figure class="product-media">
                             <a href= ${link}>
@@ -212,7 +212,7 @@ const displayItem = (item)=> {
                 </div>
             </div>
         </div>
-            </div>
+    </div>
             
         `
         )
